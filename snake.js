@@ -1,0 +1,1 @@
+export const SNAKE_SPEED = 1  //moves 1x per second
