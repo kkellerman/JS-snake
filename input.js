@@ -1,0 +1,1 @@
+//inpute from keyboard

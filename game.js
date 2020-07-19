@@ -24,9 +24,10 @@ draw()
 window.requestAnimationFrame(main)
 
 function update() {
-    updateSnake()
+    updateSnake()  
 }
 
 function draw(){
+    gameBoard.innerHTML = ''  //clear everything in moving view
     drawSnake(gameBoard)
 }

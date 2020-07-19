@@ -2,7 +2,9 @@ export const SNAKE_SPEED = 1  //moves 1x per second
 const snakeBody = [
     {x: 10, y: 11} ,
     {x: 11, y: 11} ,
-    {x: 12, y: 11}
+    {x: 12, y: 11} ,
+    {x: 13, y: 11} ,
+    {x: 14, y: 11} 
 ]
 
 //export for use in game.js
@@ -12,14 +14,14 @@ export function update() {
   }
 
 
-snakeBody[0].x +=1
-snakeBody[0].y +=0
+    //snakeBody[0].x +=0
+    //snakeBody[0].y +=1
 }
 
 export function draw(gameBoard) {
     snakeBody.forEach(segment => {
         const snakeElement = document.createElement('div')
-        snakeElement.style.gridRowStart = segment.x
+        snakeElement.style.gridRowStart = segment.y
         snakeElement.style.gridColumnStart = segment.x
         snakeElement.classList.add('snake')
         gameBoard.appendChild(snakeElement)
