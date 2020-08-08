@@ -1,6 +1,6 @@
 import { getInputDirection } from "./input.js"
 
-export const SNAKE_SPEED = 5  //moves 1x per second
+export const SNAKE_SPEED = 6  //moves 1x per second
 const snakeBody = [{x: 10, y: 11}]
 
 
