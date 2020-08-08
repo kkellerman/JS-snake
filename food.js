@@ -3,7 +3,8 @@ const EXPANSION_RATE = 1  //growth of snake when consuming food
 
 export function update() {
    if (onSnake(food)) {
-    expandSnake
+    expandSnake(EXPANSION_RATE)
+    food = { x: 20, y:10}
 
    }
   }
