@@ -1,8 +1,12 @@
-let food = {x: 0, y:0}
+let food = {x: 10, y:1}
+const EXPANSION_RATE = 1  //growth of snake when consuming food
 
 export function update() {
-   
-      }
+   if (onSnake(food)) {
+    expandSnake
+
+   }
+  }
     
    
     
