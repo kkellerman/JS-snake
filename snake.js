@@ -7,6 +7,7 @@ let newSegments = 0
 //export for use in game.js
 export function update() {
   addSegments()
+
 const inputDirection = getInputDirection()
   for(let i = snakeBody.length-2; i >=0; i--){
     snakeBody[i+1] = { ...snakeBody[i] }
@@ -45,4 +46,5 @@ function addSegments() {
   for(let i = 0; i<newSegments; i++) {
     snakeBody.push({ ...snakeBody[snakeBody.length - 1] })
   }
+  newSegments = 0  //will only expand with food
 }
