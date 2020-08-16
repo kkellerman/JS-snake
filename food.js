@@ -24,4 +24,8 @@ export function update() {
   
     
     function getRandomFoodPosition() {     //return new position every time eaten
+   let newFoodPosition
+   while (newFoodPosition == null || onSnake(newFoodPosition) ) {
+     newFoodPosition = randomGridPosition()
    }
+    }
