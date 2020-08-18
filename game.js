@@ -28,10 +28,15 @@ window.requestAnimationFrame(main)
 function update() {
     updateSnake()  
     updateFood()
+    checkDeath()
 }
 
 function draw(){
     gameBoard.innerHTML = ''  //clear everything in moving view
     drawSnake(gameBoard)
     drawFood(gameBoard)
+}
+
+function checkDeath() {
+    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
