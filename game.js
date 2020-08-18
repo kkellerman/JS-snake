@@ -8,6 +8,10 @@ let gameOver = false
 const gameBoard = document.getElementById('game-board')
 
 function main(currentTime) {
+if (gameOver){
+   return  alert('you lose')
+}
+
    window.requestAnimationFrame(main)
     const secondsSinceLastRender = (currentTime - lastRenderTime) /1000
     if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
