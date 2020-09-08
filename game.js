@@ -10,6 +10,7 @@ let lastRenderTime= 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board')
 
+//end sequence
 function main(currentTime) {
 if (gameOver){
     if (confirm('You lost.  Press ok to restart.')) {
